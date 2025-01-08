@@ -24,9 +24,9 @@ The dataset used in this case study comes from [this Kaggle dataset](https://www
 
 You can download the dataset and the SQL script used for analysis from the links provided below:
 
-Download the Dataset
+[Download the Dataset](https://github.com/andrealionzo/case-study/blob/main/listings_berlin1.csv)
 
-Download the SQL Script
+[Check or Download the SQL Script](https://github.com/andrealionzo/case-study/blob/main/case-study-berlin-airbnb.sql)
 
 ## Approach
 To explore and analyze the data, I wrote several SQL queries to explore and clean the data, and then to gather the necessary data to address each of the questions above.
