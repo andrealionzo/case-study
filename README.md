@@ -42,12 +42,12 @@ Some of the key findings from the analysis include:
 To enhance the understanding of the data and insights, I created a series of interactive visualizations in Tableau Public. These visualizations highlight:
 
 - Distribution of prices across different neighborhoods.
-- Price trends for hosts owning multiple listings versus single listings.
-- Seasonal availability of listings.
+- Price trends for hosts owning one versus multiple listings.
+- Availability of listings for more or less than six months per year.
 
 You can explore these visualizations here:
 
-View Visualizations on Tableau Public
+[View Visualizations on Tableau Public](https://public.tableau.com/views/BerlinAirbnbCaseStudy_17365354378540/BerlinAirBnbListingsbyDistrict?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ## Conclusion
 This case study highlights how Airbnb listings in Berlin are distributed across the city and their patterns in terms of prices, property distribution by area, room types, and hosts. The insights gathered from this analysis provide a better understanding of the short-term rental market in Berlin, especially in the context of rising rental prices and property availability.
