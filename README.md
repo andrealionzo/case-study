@@ -41,7 +41,7 @@ Some of the key findings from the analysis include:
 ## Visualizations
 To enhance the understanding of the data and insights, I created a series of interactive visualizations in Tableau Public. These visualizations highlight:
 
-- Distribution of prices across different neighborhoods.
+- Distribution of listings and average prices across different districts.
 - Price trends for hosts owning one versus multiple listings.
 - Availability of listings for more or less than six months per year.
 
