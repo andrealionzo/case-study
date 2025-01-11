@@ -142,14 +142,14 @@ SELECT COUNT(room_type) AS entire_homes_available_for_more_than_6_months
 FROM listings_berlin_no_duplicates
 WHERE room_type = "Entire home/apt" AND availability_365 > 182;
 
--- compare full apartments available for more than 6 months vs. the total number of full apartments 
-SELECT 
+-- compare full apartments available for more vs. less than 6 months 
+SELECT     
     COUNT(CASE WHEN room_type = "Entire home/apt" AND availability_365 > 182 THEN 1 END) AS entire_homes_available_for_more_than_6_months,
-    COUNT(CASE WHEN room_type = "Entire home/apt" THEN 1 END) AS total_entire_homes,
+    COUNT(CASE WHEN room_type = "Entire home/apt" AND availability_365 < 182 THEN 1 END) AS entire_homes_available_for_less_than_6_months,
     COUNT(CASE WHEN room_type = "Shared room" AND availability_365 > 182 THEN 1 END) AS shared_rooms_available_for_more_than_6_months,
-    COUNT(CASE WHEN room_type = "Shared room" THEN 1 END) AS total_shared_rooms,
+    COUNT(CASE WHEN room_type = "Shared room" AND availability_365 < 182 THEN 1 END) AS shared_rooms_available_for_less_than_6_months,
     COUNT(CASE WHEN room_type = "Private room" AND availability_365 > 182 THEN 1 END) AS private_rooms_available_for_more_than_6_months,
-    COUNT(CASE WHEN room_type = "Private room" THEN 1 END) AS total_private_rooms
+    COUNT(CASE WHEN room_type = "Private room" AND availability_365 < 182 THEN 1 END) AS private_rooms_available_for_less_than_6_months
 FROM listings_berlin_no_duplicates;
 
 -- check how many rooms are rented out by hosts who own more than one listing
@@ -207,7 +207,7 @@ FROM (
 
 -- find out in what ways East and West Berlin differ
 
--- add column to be able to divide neighbourhood groups between West and East Berlin
+-- add column to be able to divide neighbourhood groups into West and East Berlin
 ALTER TABLE listings_berlin_no_duplicates
 ADD COLUMN berlin_area TEXT;
 
