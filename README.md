@@ -1,4 +1,4 @@
-# Case Study: Analyzing Airbnb Listings in Berlin using SQL
+# Case Study: Analyzing Airbnb Listings in Berlin using SQL and Tableau
 ## Introduction
 In this case study, I explore the Airbnb listings in Berlin as of July 2021 using SQL to understand various aspects of the short-term rental market and its patterns. The dataset includes detailed information on Airbnb listings across the city.
 
