@@ -24,7 +24,6 @@ Der in dieser Fallstudie verwendete Datensatz stammt aus [diesem Kaggle-Dataset]
 
 Sie können den Datensatz und das für die Analyse verwendete SQL-Skript über die folgenden Links herunterladen:
 
-Dataset herunterladen
 [Dataset herunterladen](https://github.com/andrealionzo/case-study/blob/main/listings_berlin1.csv)
 
 [SQL-Skript ansehen](https://github.com/andrealionzo/case-study/blob/main/case-study-berlin-airbnb.sql)
