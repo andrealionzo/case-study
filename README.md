@@ -1,53 +1,54 @@
-# Case Study: Analyzing Airbnb Listings in Berlin using SQL and Tableau
-## Introduction
-In this case study, I will explore the Airbnb listings in Berlin as of July 2021 using SQL to understand various aspects of the short-term rental market and its patterns. The dataset includes detailed information on Airbnb listings across the city. I will then visualise the data by creating a Dashboard with Tableau.
+# Fallstudie: Analyse von Airbnb-Angeboten in Berlin mit SQL und Tableau
+## Einführung
+In dieser Fallstudie werde ich die Airbnb-Angebote in Berlin im Juli 2021 mit SQL untersuchen, um verschiedene Aspekte des kurzfristigen Mietmarkts und dessen Muster zu verstehen. Der Dataset enthält detaillierte Informationen zu Airbnb-Angeboten in der gesamten Stadt. Anschließend werde ich die Daten visualisieren, indem ich ein Dashboard mit Tableau erstelle.
 
-The analysis aims to uncover patterns and insights around the following key questions:
+Die Analyse zielt darauf ab, Muster und Erkenntnisse zu folgenden Schlüsselfragen zu gewinnen:
 
-- How many full apartments are available year-round or for more than six months?
-- How many rooms are rented out by hosts who own one vs. more than one listing?
-- How does owning multiple rooms or apartments affect the rental price?
-- In which areas is the price difference of owners with one vs. multiple apartments higher across Berlin?
-- How do East and West Berlin compare in terms of prices, room types, and hosts?
+- Wie viele komplette Wohnungen sind das ganze Jahr über oder für mehr als sechs Monate verfügbar?
+- Wie viele Zimmer werden von Gastgebern vermietet, die eine oder mehrere Unterkünfte besitzen?
+- Wie beeinflusst der Besitz mehrerer Zimmer oder Wohnungen den Mietpreis?
+- In welchen Bezirken Berlins ist der Preisunterschied zwischen Eigentümern mit einer und mehreren Wohnungen am größten?
+- Wie unterscheiden sich Ost- und West-Berlin in Bezug auf Preise, Zimmertypen und Gastgeber?
 
-The analysis is conducted using MySQL, where I query and manipulate the data to uncover trends and insights. Additionally, I provide visualizations created using Tableau to complement the analysis and help better interpret the findings.
+Die Analyse wird mit MySQL durchgeführt, wobei ich Daten abfrage und verarbeite, um Trends und Erkenntnisse aufzudecken. Zusätzlich erstelle ich Visualisierungen mit Tableau, um die Analyse zu ergänzen und die Ergebnisse besser zu interpretieren.
 
-## Dataset Overview
-The dataset used in this case study comes from [this Kaggle dataset](https://www.kaggle.com/datasets/lennarthaupts/airbnb-berlin-july-2021/data). It contains a variety of details about Airbnb listings in Berlin, including:
+## Übersicht über den Datensatz
+Der in dieser Fallstudie verwendete Datensatz stammt aus [diesem Kaggle-Dataset](https://www.kaggle.com/datasets/lennarthaupts/airbnb-berlin-july-2021/data). Er enthält eine Vielzahl von Details zu Airbnb-Angeboten in Berlin, darunter:
 
-- Listing IDs
-- Host information
-- Room types (entire home, private room, shared room)
-- Price per night
-- Location
-- Availability during the year
+- Angebots-IDs
+- Informationen über Gastgeber
+- Zimmertypen (komplette Wohnung, privates Zimmer, gemeinsames Zimmer)
+- Preis pro Nacht
+- Standort
+- Verfügbarkeit im Laufe des Jahres
 
-You can download the dataset and the SQL script used for analysis from the links provided below:
+Sie können den Datensatz und das für die Analyse verwendete SQL-Skript über die folgenden Links herunterladen:
 
-[Download the Dataset](https://github.com/andrealionzo/case-study/blob/main/listings_berlin1.csv)
+Dataset herunterladen
+[Dataset herunterladen](https://github.com/andrealionzo/case-study/blob/main/listings_berlin1.csv)
 
-[Check the SQL Script](https://github.com/andrealionzo/case-study/blob/main/case-study-berlin-airbnb.sql)
+[SQL-Skript ansehen](https://github.com/andrealionzo/case-study/blob/main/case-study-berlin-airbnb.sql)
 
-## Approach
-To explore and analyze the data, I wrote several SQL queries to explore and clean the data, and then to gather the necessary data to address each of the questions above.
+## Vorgehensweise
+Um die Daten zu erkunden und zu analysieren, habe ich mehrere SQL-Queries geschrieben, um die Daten zu bereinigen und die notwendigen Informationen zu extrahieren, um die oben genannten Fragen zu beantworten.
 
-## Key Insights & Results
-Some of the key findings from the analysis include:
+## Wichtige Erkenntnisse & Ergebnisse
+Einige der wichtigsten Erkenntnisse aus der Analyse sind:
 
-- Apartment availability: The number of full apartments available for more than 6 months was lower (about 1/3) than the total number of full apartments, indicating a strong market for full apartments on Airbnb. The same applied to private rooms.
-- Multi-listing hosts: Hosts who own multiple listings tend to charge lower prices for their properties. This could be due to economies of scale (owning several apartments/rooms reduces their cost per unit), and competitive pricing strategies for the need for higher occupancy rates across their listings.
-- Geographical differences: There were noticeable differences in pricing between East and West Berlin, with East Berlin exhibiting higher prices (74 euros vs. 61 euros for West Berlin). Additionally, the number of properties listed on Airbnb for East Berlin is higher than the one for West Berlin (1480 vs. 744). This shows an interesting and potentially unexpected finding that could be worth further analysis.
+- Wohnungsverfügbarkeit: Die Anzahl der vollständigen Wohnungen, die länger als sechs Monate verfügbar sind, war geringer (etwa ein Drittel) als die Gesamtzahl der vollständigen Wohnungen. Dies deutet darauf hin, dass es einen starken Markt für ganze Wohnungen auf Airbnb gibt. Dasselbe gilt für private Zimmer.
+- Gastgeber mit mehreren Inseraten: Gastgeber, die mehrere Inserate besitzen, verlangen tendenziell niedrigere Preise für ihre Unterkünfte. Dies könnte auf Skaleneffekte zurückzuführen sein (der Besitz mehrerer Wohnungen/Zimmer senkt die Kosten pro Einheit) sowie auf wettbewerbsfähige Preisstrategien, um eine höhere Auslastung ihrer Unterkünfte zu gewährleisten.
+- Geografische Unterschiede: Es gab deutliche Preisunterschiede zwischen Ost- und West-Berlin. In Ost-Berlin waren die Preise höher (74 Euro vs. 61 Euro in West-Berlin). Zudem war die Anzahl der auf Airbnb gelisteten Unterkünfte in Ost-Berlin höher als in West-Berlin (1480 vs. 744). Dies ist eine interessante und möglicherweise unerwartete Erkenntnis, die einer weiteren Analyse wert sein könnte.
 
-## Visualizations
-To enhance the understanding of the data and insights, I created a series of interactive visualizations in Tableau Public. These visualizations highlight:
+## Visualisierungen
+Um das Verständnis der Daten und Erkenntnisse zu verbessern, habe ich eine Reihe interaktiver Visualisierungen in Tableau Public erstellt. Diese Visualisierungen zeigen:
 
-- Distribution of listings and average prices across different districts.
-- Price trends for hosts owning one versus multiple listings.
-- Availability of listings for more or less than six months per year.
+- Die Verteilung der Inserate und die durchschnittlichen Preise in verschiedenen Bezirken.
+- Preistrends bei Gastgebern mit einer vs. mehreren Unterkünften.
+- Die Verfügbarkeit von Inseraten für mehr oder weniger als sechs Monate im Jahr.
 
-You can explore these visualizations here:
+Sie können diese Visualisierungen hier erkunden:
 
-[View Visualizations on Tableau Public](https://public.tableau.com/views/BerlinAirbnbCaseStudy_17365354378540/BerlinAirBnbListingsbyDistrict?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+[Visualisierungen auf Tableau Public ansehen](https://public.tableau.com/views/BerlinAirbnbCaseStudy_17365354378540/BerlinAirBnbListingsbyDistrict?:language=en-GB&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
-## Conclusion
-This case study highlights how Airbnb listings in Berlin are distributed across the city and their patterns in terms of prices, property distribution by area, room types, and hosts. The insights gathered from this analysis provide a better understanding of the short-term rental market in Berlin, especially in the context of rising rental prices and property availability.
+## Fazit
+Diese Fallstudie zeigt, wie Airbnb-Angebote in Berlin über die Stadt verteilt sind und welche Muster sich in Bezug auf Preise, Immobilienverteilung nach Bezirken, Zimmertypen und Gastgeber ergeben. Die gewonnenen Erkenntnisse bieten ein besseres Verständnis des kurzfristigen Mietmarkts in Berlin, insbesondere im Kontext steigender Mietpreise und der Verfügbarkeit von Unterkünften.
